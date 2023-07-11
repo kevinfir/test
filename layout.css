@@ -1,0 +1,81 @@
+/* 
+head,.welcome,.main{
+    border:2px solid black;
+    height: 400px;
+    width: 280px;
+    float:left;
+    margin:10px;
+    padding:50px;
+    background:rgb(42, 147, 188);
+    font-size:32px;
+} */
+
+.head{
+    background-color: black;
+    color: white;font-weight: bold;
+    font-size: 30px;text-align: center;
+    padding: 20px 0px;
+}
+.welcome_text{
+    font-weight: bold;
+    text-align: center;font-size: 40px;
+    color:aliceblue;
+    justify-content: center;
+    align-items: center;/*控制垂直對齊的狀況*/
+}
+.welcome{
+    background-image: url("2023-07-04 22.05.07.png");
+    background-size: 1920px 408px;
+    width: 100%;
+    height: 408px;
+    text-align: center;font-size: 40px;
+    color:aliceblue;
+    justify-content: center;
+    align-items: center;/*控制垂直對齊*/
+}
+.main{
+    display: flex; /*block左右排列*/
+    justify-content: center;/*水平對齊排列*/
+    text-align: center;
+    flex-wrap: wrap;/*允許寬度不足時往下排列*/
+}
+
+.boxRight{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.box{
+    background-color: lavender;
+    width:420px;margin: 10px;
+}
+.videoBox{
+    background-color: lavender;
+    width: 560;
+    height: 315;
+
+    margin: 10px;
+}
+/*Rwd 網頁的核心為css media query*/
+@media (max-width:1200px) {
+    .box{
+        width:45%
+    }
+}
+@media (max-width:600px) {
+    .box{
+        width:90%
+    }
+}
+/* .container {
+    display: flex;
+  }
+  
+  .block {
+    flex-grow: 1;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    background-color: #2e89d4;
+    border: 1px solid #b650d2;
+  } */
